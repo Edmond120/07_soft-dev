@@ -9,11 +9,13 @@
     login details<br>
     username: bob<br>
     password: 123<br>
-    <form method="POST">
+    <form method="POST" action="http://127.0.0.1:5000/welcome">
       Username: <input type="text" name="username">
+      <br>
       Password: <input type="text" name="password">
       <br>
       <input type="submit" value="push me" name="enter">
+      {{status}}
     </form>      
 
   </body>
