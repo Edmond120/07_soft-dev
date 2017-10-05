@@ -11,7 +11,7 @@ def root():
 
 @form_site.route("/welcome", methods=['POST', 'GET'])
 def welcome():
-    if(len(session) == 0):
+    if(len(session) > 0):
         username = session["username"]
         password = session["password"]
     else:
